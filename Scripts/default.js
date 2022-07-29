@@ -55,7 +55,6 @@ toggleButton.addEventListener("click", () => {
             text.style.fontSize = "0.8rem";
         });
         
-
     }
 
 })
