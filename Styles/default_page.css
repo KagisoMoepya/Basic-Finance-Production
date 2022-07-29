@@ -7,7 +7,9 @@
 
 :root {
     --pagePrimaryColor:  #CC2828;
-    --barColor: #dee2e6;
+    --standard_white: #FFFFFF;
+    --barColor: #bcc1c5;
+    --activeOption: #870b23;
 }
 
 body{
@@ -25,7 +27,7 @@ body #logoWrapper {
     width: 45%;
     margin: auto;
     text-align: center;
-    color: white;
+    color: var(--standard_white);
 }
 
 body #logoWrapper img {
@@ -50,18 +52,19 @@ body #logoTextWrapper h3 {
 /* Side Bar Styling */
 
 #side_bar_container { /*Done*/
-    position: absolute;
+    position: fixed;
     top: 7.5%;
     left: 2%;
     width: 12rem;
     height: 31.1rem;
     overflow: hidden;
+    z-index: 1;
     transition: all 0.3s ease-in;
 }
 
 #home_button { /*Done*/
     position: relative;
-    background-color: white;
+    background-color: var(--standard_white);
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -79,7 +82,7 @@ body #logoTextWrapper h3 {
     top: 1rem;
     width: 12rem;
     height: 2.5rem;
-    background-color: white;
+    background-color: var(--standard_white);
     border-radius: 30px;
     cursor: pointer;
     overflow: hidden;
@@ -91,14 +94,16 @@ body #logoTextWrapper h3 {
 }
 
 #options_bar { /*Done*/
+    --options_bar_radius: 20px;
     position: relative;
     top: 3rem;
-    background-color: white;
+    background-color: var(--standard_white);
     height: 23.05rem;
-    border-radius: 15px;
+    border-radius: var(--options_bar_radius);
+    border: none;
 }
 
-/* Icons styling */
+/* Side Bar Icons styling */
 
 #home_button img {
     position: relative;
@@ -127,8 +132,9 @@ body #logoTextWrapper h3 {
 .side_bar_options {
     display: flex;
     width: 100%;
-    height: calc(22.75rem/6);
+    height: calc(22.80rem/6);
     cursor: pointer;
+    border: none;
     transition: all 0.3s ease-in;
 }
 
@@ -163,11 +169,34 @@ hr {
 }
 
 #top_option{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: var(--options_bar_radius);
+    border-top-right-radius: var(--options_bar_radius);
 }
 
 #bottom_option{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: var(--options_bar_radius);
+    border-bottom-right-radius: var(--options_bar_radius);
 }
+
+/* Contact Styling */
+
+#contact_button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--standard_white);
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    animation: contact_bounce 0.65s ease 0s infinite alternate;
+}
+
+@keyframes contact_bounce {
+    from{ bottom: 1.5rem; }
+    to { bottom: 2rem; }
+}
+
+#contact_button:hover {
+    background-color: var(--barColor);
+}
+
+

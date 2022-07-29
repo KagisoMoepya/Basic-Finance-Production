@@ -48,7 +48,7 @@ toggleButton.addEventListener("click", () => {
         sideBar.style.width = "12rem";
 
         optionPic.forEach(icon => {
-            icon.style.left = "1.25rem";
+            icon.style.left = "1.5rem";
         });
 
         optionText.forEach(text => {

@@ -1,0 +1,47 @@
+/* Home Content Styling */
+
+:root {
+    --standard_white: #FFFFFF;
+    --standard_pic_width: 11.5rem;
+}
+
+#home_content_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    max-width: 60rem;
+    margin: auto;
+    height: 100%;
+    transition: all 0.5s ease-in;
+}
+
+.home_showcase_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: calc(60rem/3);
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home_showcase_wrapper img {
+    position: relative;
+    width: var(--standard_pic_width);
+    height: var(--standard_pic_width);
+    transition: all 0.35s ease-in;
+}
+
+.home_showcase_wrapper img:hover {
+    width: calc(var(--standard_pic_width) + 2rem);
+    height: calc(var(--standard_pic_width) + 2rem);
+}
+
+.home_showcase_wrapper h3 {
+    position: relative;
+    top: 2rem;
+    color: var(--standard_white);
+}
