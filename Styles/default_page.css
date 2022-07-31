@@ -191,6 +191,7 @@ hr {
     background-color: var(--standard_white);
     border-radius: 50%;
     transition: all 0.3s ease-in;
+    cursor: pointer;
     animation: contact_bounce 0.65s ease 0s infinite alternate;
 }
 
