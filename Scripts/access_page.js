@@ -56,8 +56,8 @@ loginSelector.addEventListener("click", () => {
     loginForm.style.display = "block";
     registerForm.style.display = "none";
 
-    accessContainer.style.height = "18.5rem";
-    accessSelectorWrap.style.bottom = "1.5rem";
+    accessContainer.style.height = "20rem";
+    accessSelectorWrap.style.bottom = "2.2rem";
 
     accessSubmitButton.value = "Login";
 

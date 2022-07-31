@@ -1,6 +1,6 @@
 /**
- * This script is for manipulating the default page
- */
+* This script is for manipulating the default page
+*/
 
 //For the full side bar
 let sideBar = document.querySelector("#side_bar_container");
