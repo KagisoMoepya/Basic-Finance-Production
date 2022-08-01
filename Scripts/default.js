@@ -9,7 +9,7 @@ let sideBar = document.querySelector("#side_bar_container");
 let toggleButton = document.getElementById("expand_toggle_button");
 let togglePic = document.getElementById("toggle_picture");
 let toggleText = document.getElementById("toggle_text");
-let toggleStatus = true;
+let toggleStatus = false;
 
 //For the options buttons
 let optionBar = document.getElementById("options_bar");
