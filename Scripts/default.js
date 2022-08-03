@@ -17,8 +17,8 @@ let optionPic = document.querySelectorAll(".option_icon");
 let optionText = document.querySelectorAll(".option_text");
 
 /**
- * Adding event listener for toggle button
- */
+* Adding event listener for toggle button
+*/
 toggleButton.addEventListener("click", () => {
 
     if(toggleStatus) {
@@ -58,3 +58,8 @@ toggleButton.addEventListener("click", () => {
     }
 
 })
+
+/**
+ * Activate different color when active on page
+ */
+
