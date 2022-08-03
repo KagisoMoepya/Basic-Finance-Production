@@ -39,7 +39,7 @@
 
             <hr>
 
-            <a href="#">
+            <a href="Product Line.html">
                 <div class="side_bar_options">
                     <img class="option_icon" src="Icons/Default Icons/Product Line Icon.svg" alt="">
                     <h3 class="option_text">Pruduct Line</h3>
@@ -89,7 +89,7 @@
     <!-- New Category Content -->
 
         <div id="category_photo_container">
-            <img src="Icons/Product Line Icons/No Image.png" alt="">
+            <img id="category_or_type_img" src="Icons/Product Line Icons/No Image.png" alt="">
         </div>
 
         <div id="category_name_container">
@@ -104,16 +104,21 @@
             </div>
 
             <div id="category_choose_pic_wrap">
-                <input type="file" name="image" id="file" accept="image/*" style="display: none">
-                <label for="file"><div id="choose_pic_text"><p>Choose Picture</p></div></label>
-                <p id="file_name">File Name.PNG</p>
+                <input type="file" name="image" id="choose_img" accept="image/*" style="display: none" required>
+                <label for="choose_img"><div id="choose_pic_text"><p>Choose Picture</p></div></label>
+                <p id="file_name">File Name.png</p>
             </div>
 
             <div id="return_and_add_container">
 
-                <div id="return_wrap">
-
+                <div class="return_add_class" id="return_wrap">
+                    <img src="Icons/Product Line Icons/Return.svg" alt="">
+                    <h3>Back</h3>
                 </div>
+
+                
+                <input class="return_add_class" id="add_category_button" type="submit" value="+ Category">
+                    
 
             </div>
 
