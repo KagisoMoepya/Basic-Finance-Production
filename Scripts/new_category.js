@@ -19,7 +19,6 @@ categoryInput.addEventListener("input", () => {
 
 });
 
-
 /**
 * Adds a picture on the picture view of Add New Category
 */
@@ -27,7 +26,7 @@ categoryInput.addEventListener("input", () => {
 let categoryOrTypeImg = document.getElementById("category_or_type_img");
 let choosePicButton = document.getElementById("choose_img");
 let fileName = document.getElementById("file_name");
-let uploadedImage = "";
+let fileNameString = "";
 
 choosePicButton.addEventListener("change", () => {
     
@@ -36,11 +35,31 @@ choosePicButton.addEventListener("change", () => {
 
     reader.onload = function() {
         categoryOrTypeImg.src = reader.result;
+        alert(reader.result)
+        categoryOrTypeImg.style.backgroundColor = "#d5d1d1";
     }
 
     const pictureData = choosePicButton.files[0];
     reader.readAsDataURL(pictureData);
     fileName.innerHTML = pictureData.name;
+    fileNameString = pictureData.name;
+
+    
     
 }, false)
+
+/**
+* On Submit click color should change to standard color
+*/
+
+let addCategoryButton = document.getElementById("add_category_button");
+
+addCategoryButton.addEventListener("click", () => {
+
+    if (categoryInput.value.length > 0 && fileNameString != "") {
+        categoryOrTypeImg.style.backgroundColor = "#7B4E4E";
+    }
+
+})
+
 
