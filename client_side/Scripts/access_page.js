@@ -23,7 +23,7 @@ let registerForm = document.getElementById("register_form")
 let loginForm = document.getElementById("login_form")
 
 // For the Submit button
-let accessSubmitButton = document.getElementById("submit_button")
+let accessSubmitButton = document.getElementsByClassName("submit_button")
 
 /**
  * Adding event listener for the Register and Login Selector on click
@@ -62,4 +62,10 @@ loginSelector.addEventListener("click", () => {
     accessSubmitButton.value = "Login"
 
 })
+
+/** 
+* Register and Login button functionality
+*/
+
+
 

@@ -2,7 +2,7 @@
   "name": "basic-finance-production",
   "version": "1.0.0",
   "description": "Production of an ERP web application platform for small enterprises to keep control of their stock items and finances",
-  "main": "project\\ main.js",
+  "main": "project main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/KagisoMoepya/SMME-Finance-Project#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.11"
   }
 }
