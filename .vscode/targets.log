@@ -2,22 +2,38 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.2.1
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
+ 
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Aug 15 21:30:40 2022
+ 
+# Make data base, printed on Mon Aug 22 01:01:59 2022
+ 
 
 # Variables
+ 
 
+ 
 # 'override' directive
+ 
 GNUMAKEFLAGS := 
+ 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
+ 
 ?F = $(notdir $?)
+ 
 # environment
 DESKTOP_SESSION = ubuntu
 # default
@@ -26,6 +42,7 @@ DESKTOP_SESSION = ubuntu
 PROVIDE_FULLSTACK_ACTION = true
 # environment
 XDG_SESSION_CLASS = user
+ 
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -49,7 +66,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:45133
+JOURNAL_STREAM = 8:43498
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -69,7 +86,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 1315
+MANAGERPID = 1470
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -83,7 +100,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GOLANG_EXECUTABLE = go
 # environment
-SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/1669,unix/wtc:/tmp/.ICE-unix/1669
+SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/1697,unix/wtc:/tmp/.ICE-unix/1697
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -97,7 +114,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = daef5770a4b94ac68a5f43fc1558c06b
+INVOCATION_ID = 43f55248ae71487ea39670a4d0e9c223
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -109,7 +126,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3239
+GIO_LAUNCHED_DESKTOP_FILE_PID = 8733
 # automatic
 %F = $(notdir $%)
 # environment
@@ -119,7 +136,7 @@ PWD = /home/kagiso/Documents/git_hub projects/Basic Finance Production
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1624
+SSH_AGENT_PID = 1660
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -136,6 +153,7 @@ VSCODE_CODE_CACHE_PATH = /home/kagiso/.config/Code/CachedData/6d9b74a70ca9c7733b
 LOGNAME = kagiso
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+ 
 # environment
 TELEMETRY_ID = 6f6ff080-4508-4308-8523-234aaed29bfd
 # environment
@@ -229,7 +247,7 @@ GPG_TTY = not a tty
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3239
+VSCODE_PID = 8733
 # variable set hash-table stats:
 # Load=109/1024=11%, Rehash=0, Collisions=15/134=11%
 
@@ -239,9 +257,10 @@ VSCODE_PID = 3239
 
 # Directories
 
-# . (device 2054, inode 2905111): 13 files, no impossibilities.
+# . (device 2055, inode 2905111): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+ 
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -283,14 +302,13 @@ kill:
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
- 
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 217 B / avg = 11 B
-# current buf: size = 8162 B / used = 217 B / count = 19 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 241 B / avg = 12 B
+# current buf: size = 8162 B / used = 241 B / count = 20 / avg = 12 B
 
-# strcache performance: lookups = 24 / hit rate = 20%
+# strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Mon Aug 15 21:30:40 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Mon Aug 22 01:01:59 2022
 
  

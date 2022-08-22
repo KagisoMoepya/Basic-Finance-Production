@@ -49,34 +49,34 @@
 
             <hr>
 
-            <a class="sidebar_links" href="Product Line.html">
+            <a class="sidebar_links sidebar_item_opacity" href="Product Line.html">
                 <div class="side_bar_options">
                     <img class="option_icon" src="Icons/Default Icons/Product Line Icon.svg" alt="">
                     <h3 class="option_text">Pruduct Line</h3>
                 </div>
             </a>
            
-            <hr>
+            <hr class="sidebar_item_opacity">
  
-            <a class="sidebar_links" href="#">
+            <a class="sidebar_links sidebar_item_opacity" href="#">
                 <div class="side_bar_options">
                     <img class="option_icon" src="Icons/Default Icons/Sales Icon.svg" alt="">
                     <h3 class="option_text">Sales</h3>
                 </div>
             </a>
            
-            <hr>
+            <hr class="sidebar_item_opacity">
 
-            <a class="sidebar_links" href="#">
+            <a class="sidebar_links sidebar_item_opacity" href="#">
                 <div class="side_bar_options">
                     <img class="option_icon" src="Icons/Default Icons/Customer Base Icon.svg" alt="">
                     <h3 class="option_text">Customer Base</h3>
                 </div>
             </a>
 
-            <hr>
+            <hr class="sidebar_item_opacity">
 
-            <a class="sidebar_links" href="#">
+            <a class="sidebar_links sidebar_item_opacity" href="#">
                 <div class="side_bar_options">
                     <img class="option_icon" src="Icons/Default Icons/Profits Icon.svg" alt="">
                     <h3 class="option_text">Profits</h3>
@@ -112,39 +112,38 @@
         <form action="" id="register_form">
 
             <div class="input_wrapper">
-                <input type="text" name="full_name" id="full_name" required>
+                <input type="text" name="full_name" id="full_name" autocomplete="off" required>
                 <label for="full_name">Full Name</label>
             </div>
 
             <div class="input_wrapper">
-                <input type="text" name="register_email_address" id="register_email_address" required>
+                <input type="text" name="register_email_address" id="register_email_address" autocomplete="off" required>
                 <label for="register_email_address">Email Address</label>
             </div>
 
             <div class="input_wrapper">
-                <input type="password" name="register_password" id="register_password" required>
+                <input type="password" name="register_password" id="register_password" autocomplete="off" required>
                 <label for="register_password">Password</label>
             </div>
 
             <div class="input_wrapper">
-                <input type="password" name="confirm_password" id="confirm_password" required>
+                <input type="password" name="confirm_password" id="confirm_password" autocomplete="off" required>
                 <label for="confirm_password">Confirm Password</label>
             </div>
 
-            <input class="submit_button" type="submit" value="Register">
+            <input id="register_submit_button" type="submit" value="Register">
 
         </form>
 
         <form action="" id="login_form">
 
-
             <div class="input_wrapper">
-                <input type="text" name="email_address" id="login_email_address" required>
+                <input type="text" name="email_address" id="login_email_address" autocomplete="off" required>
                 <label for="login_email_address">Email Address</label>
             </div>
 
             <div class="input_wrapper">
-                <input type="password" name="login_password" id="login_password" required>
+                <input type="password" name="login_password" id="login_password" autocomplete="off" required>
                 <label for="login_password">Password</label>
             </div>
 
@@ -152,8 +151,7 @@
                 <a href="#">Forgot Password</a>
             </div>
 
-
-            <input class="submit_button" type="submit" value="Login">
+            <input id="login_submit_button" type="submit" value="Login">
 
         </form>
 

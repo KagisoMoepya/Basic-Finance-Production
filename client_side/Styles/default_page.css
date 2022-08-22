@@ -114,6 +114,10 @@ body #logoTextWrapper h3 {
     justify-content: space-between;
 }
 
+.sidebar_item_opacity {
+    visibility: hidden;
+}
+
 /* Side Bar Icons styling */
 
 #home_button img {

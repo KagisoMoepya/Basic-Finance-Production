@@ -4,7 +4,8 @@
   "description": "Production of an ERP web application platform for small enterprises to keep control of their stock items and finances",
   "main": "project main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "main": "nodemon project main.js",
+    "user_class_log": "nodemon project user details.js"
   },
   "repository": {
     "type": "git",

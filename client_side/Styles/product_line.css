@@ -2,6 +2,8 @@
 
 :root {
     --div_background: #7B4E4E;
+    --div_background_hover: #d3caca;
+    --color_on_hover: #3c3939;
     --pic_size: 65%;
     --category_size: 9rem;
 }
@@ -56,8 +58,8 @@
 }
 
 .category:hover {
-    background-color: #d3caca;
-    color: #3c3939;
+    background-color: var(--div_background_hover);
+    color: var(--color_on_hover);
 }
 
 .category .category_img {

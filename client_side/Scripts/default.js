@@ -59,6 +59,10 @@ toggleButton.addEventListener("click", () => {
 
 })
 
-/**
-* Activate different color when active on page
-*/
+// window.addEventListener('load', () => {
+//     let sidebar_item_opacity = document.querySelectorAll('.sidebar_item_opacity')
+
+//     sidebar_item_opacity.forEach(item => {
+//         item.style.visibility = "visible"
+//     })
+// })
