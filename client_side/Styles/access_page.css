@@ -7,6 +7,7 @@
     --selector_on_color: #939292;
     --input_background: #E5E2E2;
     --label_text_color: #5C4C4C;
+    --forgot_pass_text_color: #555555;
 }
 
 /* Form visibility or Display */
@@ -17,6 +18,14 @@
 
 #register_form {
     display: block;
+}
+
+#forgot_password_form {
+    display: none;
+}
+
+#otp_form {
+    display: none;
 }
 
 /* Access Container Styling */
@@ -121,7 +130,6 @@
     color: black;
 }
 
-
 #forgot_password_button {
     display: flex;
     justify-content: flex-end;
@@ -129,11 +137,14 @@
     right: 3rem;
     bottom: 0.75rem;
     font-size: 0.8rem;
+    color: var(--primary_color);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 
-#forgot_password_button a{
-    text-decoration: none;
-    color: var(--primary_color);
+#forgot_password_button:hover {
+    letter-spacing: 0.5px;
+    right: 2.75rem;
 }
 
 input[type=submit] {
@@ -154,4 +165,83 @@ input[type=submit] {
 
 input[type=submit]:hover {
     letter-spacing: 1px;
+}
+
+/* Forgot Password Form Styling */
+
+#forgot_password_head {
+    position: relative;
+    bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+    height: 1.8rem;
+}
+
+#forgot_password_head h2 {
+    text-align: center;
+    color: var(--forgot_pass_text_color);
+}
+
+#forgot_password_head img {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0.6;
+    transform: rotate(90deg) translate(-2.1rem, 7.5rem);
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+}
+
+#forgot_password_head img:hover {
+    opacity: 1;
+}
+
+#forgot_pass_message{
+    font-size: 0.8rem;
+    width: 80%;
+    margin: auto;
+    color: #3A3838;
+    transform: translateY(0.5rem);
+    margin-bottom: 1.75rem;
+}
+
+#forgot_submit_button {
+    position: relative;
+    left: 29.5%;
+    top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: inherit;
+    width: 8rem;
+    height: 2.25rem;
+    border: none;
+    background-color: var(--primary_color);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+#forgot_submit_button:hover {
+    letter-spacing: 1px;
+}
+
+/* OTP form styling */
+
+#otp_form h2{
+    text-align: center;
+    color: var(--forgot_pass_text_color);
+    margin-bottom: 1.5rem;
+}
+
+#otp_message {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: auto;
+    color: #3A3838;
+    transform: translateY(-1rem);
+    margin-top: 2rem;
 }

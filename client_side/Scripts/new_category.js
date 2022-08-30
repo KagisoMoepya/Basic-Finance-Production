@@ -30,9 +30,7 @@ let fileNameString = ""
 
 choosePicButton.addEventListener("change", () => {
     
-    // console.log(choosePicButton.files)
     const reader = new FileReader()
-
     reader.onload = function() {
         categoryOrTypeImg.setAttribute("src", reader.result)
         categoryOrTypeImg.style.backgroundColor = "#d5d1d1"
@@ -42,23 +40,6 @@ choosePicButton.addEventListener("change", () => {
     reader.readAsDataURL(pictureData)
     fileName.innerHTML = pictureData.name
     fileNameString = pictureData.name
-
-    
-    const files = choosePicButton.files
-    const formData = new FormData()
-    formData.append('myFile', files[0])
-
-    fetch('/Scripts', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-    })
-    .catch(error => {
-      console.log(error)
-    })
     
 }, false)
 

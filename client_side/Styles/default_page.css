@@ -115,7 +115,7 @@ body #logoTextWrapper h3 {
 }
 
 .sidebar_item_opacity {
-    visibility: hidden;
+    visibility: visible;
 }
 
 /* Side Bar Icons styling */
