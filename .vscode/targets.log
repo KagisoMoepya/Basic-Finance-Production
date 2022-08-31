@@ -2,32 +2,19 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Wed Aug 31 01:08:28 2022
- 
+# Make data base, printed on Wed Aug 31 15:10:32 2022
 
 # Variables
- 
 
- 
 # environment
- 
 PROVIDE_FULLSTACK_ACTION = true
- 
 # environment
- 
 JAVA_HOME = /home/kagiso/.sdkman/candidates/java/current
 # environment
 GDK_BACKEND = x11
@@ -39,7 +26,6 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 SDKMAN_PLATFORM = linuxx64
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
- 
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
@@ -75,7 +61,7 @@ VSCODE_CODE_CACHE_PATH = /home/kagiso/.config/Code/CachedData/6d9b74a70ca9c7733b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.WZVPR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.5L4NR1
 # default
 .LOADED := 
 # default
@@ -113,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 19090
+VSCODE_PID = 2700
 # environment
 SDKMAN_DIR = /home/kagiso/.sdkman
 # environment
@@ -121,7 +107,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/1803,unix/wtc:/tmp/.ICE-unix/1803
+SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2007,unix/wtc:/tmp/.ICE-unix/2007
 # automatic
 *F = $(notdir $*)
 # environment
@@ -165,7 +151,7 @@ LANGUAGE = en_ZA:en
 # environment
 SDKMAN_CANDIDATES_DIR = /home/kagiso/.sdkman/candidates
 # environment
-INVOCATION_ID = 73b971f6799a42328d5306405c1f05ed
+INVOCATION_ID = 75f1e9e5a8244ca286ba095217a16be6
 # environment
 USERNAME = kagiso
 # environment
@@ -173,7 +159,6 @@ GNOME_SETUP_DISPLAY = :1
 # environment
 RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
 # environment
- 
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
@@ -198,7 +183,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := kill
 # environment
-SYSTEMD_EXEC_PID = 1896
+SYSTEMD_EXEC_PID = 2053
 # environment
 DISPLAY = :0
 # environment
@@ -208,15 +193,15 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1606
+MANAGERPID = 1856
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 19090
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2700
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:32954
+JOURNAL_STREAM = 8:33082
 # environment
 GOLANG_EXECUTABLE = go
 # environment
@@ -238,6 +223,7 @@ IM_CONFIG_PHASE = 1
 # default
 .RECIPEPREFIX := 
 # automatic
+ 
 <F = $(notdir $<)
 # default
 SUFFIXES := 
@@ -278,7 +264,6 @@ kill:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-08-15 05:13:15.261560803
 #  File has been updated.
 #  Successfully updated.
@@ -310,6 +295,6 @@ all:
 # strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Wed Aug 31 01:08:28 2022
+# Finished Make data base on Wed Aug 31 15:10:32 2022
 
  

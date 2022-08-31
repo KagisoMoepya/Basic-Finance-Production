@@ -92,7 +92,7 @@ forgotPasswordButton.addEventListener('click', () => {
 
     forgotSubmitButton.addEventListener('click', () => {
         
-        accessContainer.style.height = '15rem'
+        accessContainer.style.height = '16rem'
         loginForm.style.display = 'none'
         registerForm.style.display = 'none'
         forgotPasswordForm.style.display = 'none'
