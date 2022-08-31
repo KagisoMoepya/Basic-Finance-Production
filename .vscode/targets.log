@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 31 15:10:32 2022
+# Make data base, printed on Wed Aug 31 22:28:37 2022
 
 # Variables
 
@@ -61,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/kagiso/.config/Code/CachedData/6d9b74a70ca9c7733b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.5L4NR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.ZXVQR1
 # default
 .LOADED := 
 # default
@@ -99,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2700
+VSCODE_PID = 3190
 # environment
 SDKMAN_DIR = /home/kagiso/.sdkman
 # environment
@@ -107,7 +105,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2007,unix/wtc:/tmp/.ICE-unix/2007
+SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/1987,unix/wtc:/tmp/.ICE-unix/1987
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +149,7 @@ LANGUAGE = en_ZA:en
 # environment
 SDKMAN_CANDIDATES_DIR = /home/kagiso/.sdkman/candidates
 # environment
-INVOCATION_ID = 75f1e9e5a8244ca286ba095217a16be6
+INVOCATION_ID = d677a9ffa6364d1f9de16cf416f15a9d
 # environment
 USERNAME = kagiso
 # environment
@@ -183,7 +181,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := kill
 # environment
-SYSTEMD_EXEC_PID = 2053
+SYSTEMD_EXEC_PID = 2034
 # environment
 DISPLAY = :0
 # environment
@@ -193,15 +191,15 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1856
+MANAGERPID = 1835
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2700
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3190
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:33082
+JOURNAL_STREAM = 8:34931
 # environment
 GOLANG_EXECUTABLE = go
 # environment
@@ -223,7 +221,6 @@ IM_CONFIG_PHASE = 1
 # default
 .RECIPEPREFIX := 
 # automatic
- 
 <F = $(notdir $<)
 # default
 SUFFIXES := 
@@ -294,7 +291,10 @@ all:
 
 # strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 # Load=20/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Wed Aug 31 15:10:32 2022
+# Finished Make data base on Wed Aug 31 22:28:37 2022
 
  
