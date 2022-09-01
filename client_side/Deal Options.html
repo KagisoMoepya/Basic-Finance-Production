@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Line</title>
+    <title>Deal Options</title>
     <link rel="shortcut icon" href="Icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="Styles/default_page.css">
     <link rel="stylesheet" href="Styles/deal_options.css">
     <script src="Scripts/default.js" defer></script>
+    <script src="./Scripts/deal_options.js" defer></script>
 </head>
 <body>
 
@@ -86,6 +87,12 @@
 
     <!-- Product Line Page Items -->
 
+    <div id="right_selectors_container">
+        <div class="right_side_selectors">
+            <img src="./Icons/Deal Options/rightSide_options.svg" alt="">
+        </div>
+    </div>
+
     <div id="deal_options_heading">
         <h1>Create New Deal</h1>
         <h2><u>Winter Socks</u></h2>
@@ -116,21 +123,42 @@
         </div>
     </form>
 
-    <!-- <div id="deal_options_container">
+    <div id="existing_deals_container">
+        <div id="deals_wrapper">
+            <div class="existing_deal">
+                <h5><u>R</u></h5>
+                <h5>60</h5>
+                <h5><u>Units</u></h5>
+                <h5>1</h5>
+                <div class="remove_deal">x</div>
+            </div>
+            <div class="existing_deal">
+                <h5><u>R</u></h5>
+                <h5>100</h5>
+                <h5><u>Units</u></h5>
+                <h5>2</h5>
+                <div class="remove_deal">x</div>
+            </div>
+            <div class="existing_deal">
+                <h5><u>R</u></h5>
+                <h5>120</h5>
+                <h5><u>Units</u></h5>
+                <h5>3</h5>
+                <div class="remove_deal">x</div>
+            </div>
+        </div>
 
-        
-
-    </div> -->
-
-    <div id="product_line_container">
-        
+        <div class="final_buttons" id="return_button_existing_deal">
+            <a href="./Product Line.html">
+                <img src="Icons/Product Line Icons/Return.svg" alt="">
+                <h5>Back</h5>
+            </a>
+        </div>
     </div>
 
     <!-- Side Bar right for Deal Options-->
 
     <div id="right_sidebar_container">
-
-        <img src="./Icons/Product Line Icons/close.svg" alt="">
 
         <div id="right_sidebar_head">
             <h4>Winter Socks</h4>
@@ -138,7 +166,7 @@
         </div>
 
         <div id="right_side_options_wrapper">
-            <div class="right_sidebar_options"><h4>Create New Deal</h4></div>
+            <div id="create_new_deal_selector" class="right_sidebar_options"><h4>Create New Deal</h4></div>
             <div class="right_sidebar_options"><h4>Existing Deals</h4></div>
         </div>
     </div>

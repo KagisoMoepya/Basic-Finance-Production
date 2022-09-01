@@ -7,6 +7,7 @@
     --return_hover_color: #AFAFAF;
     --return_color: #E8D2D2;
     --right_sidebar_color: #D9D9D9;
+    --bar_Color: #bcc1c5;
     --width_height: 10rem;
     --border-radius: 30px;
 }
@@ -33,6 +34,43 @@ body {
     font-size: 1.75rem;
 }
 
+/* Close Sidebar button */
+
+#right_selectors_container {
+    width: 2.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+    z-index: 1;
+}
+
+.right_side_selectors {
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.right_side_selectors img {
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-out;
+}
+
+.right_side_selectors:hover {
+    background-color: var(--bar_Color);
+}
+
 /* Form Styling */
 
 form {
@@ -44,6 +82,7 @@ form {
     top: 8rem;
     border-radius: 25px;
     box-shadow: 0 0 10px 0.5px rgb(0, 0, 0, 0.25);
+    display: block;
 }
 
 .new_deal_input_wrap {
@@ -169,6 +208,94 @@ input[type=number] {
     background-color: var(--add_category_hover_color);
 }
 
+/* Exsting Deals Container */
+
+#existing_deals_container {
+    width: 19rem;
+    min-height: 7.5rem;
+    margin: auto;
+    position: relative;
+    top: 8rem;
+    border-radius: 25px;
+    background-color: var(--div_background);
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#deals_wrapper {
+    width: 100%;
+    min-height: 2rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.existing_deal {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 87.5%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    cursor: default;
+    margin-top: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+.remove_deal {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(227, 10, 10);
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.remove_deal:hover {
+    background-color: #940606;
+}
+
+#return_button_existing_deal {
+    margin: 0.75rem auto;
+    background-color: var(--return_color);
+    position: relative;
+    bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#return_button_existing_deal  a {
+    width: 100%;
+    height: 2.5rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#return_button_existing_deal img{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    right: 0.40rem;
+}
+
+#return_button_existing_deal:hover {
+    background-color: var(--return_hover_color);
+}
+
 /* Sidebar Styling (Right hand side) */
 
 #right_sidebar_container {
@@ -177,35 +304,10 @@ input[type=number] {
     background-color: var(--right_sidebar_color);
     position: absolute;
     top: 10.5rem;
-    right: 0rem;
+    right: -12.5rem;
     border-bottom-left-radius: var(--border-radius);
     border-top-left-radius: var(--border-radius);
     transition: all 0.3s ease-out;
-    animation: come_in 0.3s ease-out 0s 1;
-}
-
-@keyframes come_in {
-    from {
-        right: -12.5rem;
-    }
-    to {
-        right: 0rem;
-    }
-}
-
-#right_sidebar_container img {
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.2s ease-out;
-}
-
-#right_sidebar_container img:hover {
-    opacity: 0.8;
 }
 
 #right_sidebar_head {
@@ -243,7 +345,12 @@ input[type=number] {
     transition: all 0.3s ease-in;
 }
 
-.right_sidebar_options:hover {
+#create_new_deal_selector {
+    background-color: #940606;
+    color: white;
+}
+
+/* .right_sidebar_options:hover {
     background-color: #940606;
     color: #e9dcdc;
-}
+} */

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep  1 10:54:44 2022
+# Make data base, printed on Thu Sep  1 14:55:25 2022
 
 # Variables
 
@@ -61,7 +61,7 @@ VSCODE_CODE_CACHE_PATH = /home/kagiso/.config/Code/CachedData/6d9b74a70ca9c7733b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.NT9TR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.WDZSR1
 # default
 .LOADED := 
 # default
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2774
+VSCODE_PID = 3387
 # environment
 SDKMAN_DIR = /home/kagiso/.sdkman
 # environment
@@ -107,7 +107,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2004,unix/wtc:/tmp/.ICE-unix/2004
+SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2266,unix/wtc:/tmp/.ICE-unix/2266
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +151,7 @@ LANGUAGE = en_ZA:en
 # environment
 SDKMAN_CANDIDATES_DIR = /home/kagiso/.sdkman/candidates
 # environment
-INVOCATION_ID = 31301ec727e64ef68b7ea82c4c9121c7
+INVOCATION_ID = 5ce3775f3bd24c1896ad3d2f0c8cdaa6
 # environment
 USERNAME = kagiso
 # environment
@@ -183,7 +183,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := kill
 # environment
-SYSTEMD_EXEC_PID = 2041
+SYSTEMD_EXEC_PID = 2319
 # environment
 DISPLAY = :0
 # environment
@@ -193,15 +193,15 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1857
+MANAGERPID = 2112
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2774
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3387
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:33146
+JOURNAL_STREAM = 8:35112
 # environment
 GOLANG_EXECUTABLE = go
 # environment
@@ -210,7 +210,6 @@ XDG_SESSION_CLASS = user
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
- 
 # environment
 HOME = /home/kagiso
 # environment
@@ -294,7 +293,8 @@ all:
 
 # strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
+ 
 # Load=20/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Thu Sep  1 10:54:44 2022
+# Finished Make data base on Thu Sep  1 14:55:25 2022
 
  
