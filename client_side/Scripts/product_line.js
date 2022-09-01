@@ -5,7 +5,9 @@ const productLineContainer = document.getElementById('product_line_container')
 const category = document.querySelectorAll('.category')
 const rightSidebarHeading = document.getElementById('right_sidebar_head')
 const rightSidebar = document.getElementById('right_sidebar_container')
+const rightSidebarOptions = document.querySelectorAll('.right_sidebar_options')
 let product_list = []
+let options_list = []
 
 category.forEach(product => {
     const product_name = product.querySelector('.stock_count')
@@ -23,6 +25,15 @@ category.forEach(product => {
     })
 })
 
+rightSidebarOptions.forEach(option => {
+    const option_text = option.getElementsByTagName('h4').item(0)
+    const options_details = {option, option_text}
+    options_list.push(options_details)
+})
+
+/* 
+Detects whether the user clicks and acts accordingly
+*/
 document.addEventListener('click', (e) => {
     const noHoverBackgroundColor = '#7B4E4E'
     const hoverBackgroundColor = '#d3caca'
@@ -44,6 +55,15 @@ document.addEventListener('click', (e) => {
         } else {
             product.style.backgroundColor = noHoverBackgroundColor
             product.style.color = noHoverTextColor
+        }
+    })
+
+    options_list.forEach(details => {
+        const { option } = details
+        const { option_text } = details
+
+        if(e.target == option || e.target == option_text) {
+            productBool = true
         }
     })
 

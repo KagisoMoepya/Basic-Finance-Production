@@ -154,6 +154,10 @@ body {
     min-height: 3rem;
 }
 
+#right_side_options_wrapper a {
+    text-decoration: none;
+}
+
 .right_sidebar_options {
     width: 100%;
     min-height: 3rem;

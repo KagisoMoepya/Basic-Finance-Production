@@ -1,0 +1,249 @@
+/* Deal Options Styling */
+
+:root {
+    --div_background: #7B4E4E;
+    --add_category_color: #54C3CA;
+    --add_category_hover_color: #38aab0;
+    --return_hover_color: #AFAFAF;
+    --return_color: #E8D2D2;
+    --right_sidebar_color: #D9D9D9;
+    --width_height: 10rem;
+    --border-radius: 30px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Heading Styling */
+
+#deal_options_heading {
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+
+#deal_options_heading h1 {
+    font-size: 2.5rem;
+}
+
+#deal_options_heading h2 {
+    font-size: 1.75rem;
+}
+
+/* Form Styling */
+
+form {
+    width: 19rem;
+    height: 12.5rem;
+    margin: auto;
+    background-color: var(--div_background);
+    position: relative;
+    top: 8rem;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0.5px rgb(0, 0, 0, 0.25);
+}
+
+.new_deal_input_wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 1.5rem;
+}
+
+.new_deal_input_wrap input{
+    width: 88.5%;
+    height: 2rem;
+    padding-left: 16px;
+    padding-right: 4px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--div_background);
+    border: 2px solid rgb(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+    transition: all 0.3s ease-in;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.new_deal_input_wrap input:focus {
+    border: 2px solid rgb(0, 0, 0, 0.5);
+}
+
+.new_deal_input_wrap label {
+    position: relative;
+    left: 1rem;
+    bottom: 1.70rem;
+    color: white;
+    cursor: text;
+    opacity: 0.9;
+    background-color: var(--div_background);
+    padding: 0 5px 0 5px;
+    font-size: 0.90rem;
+    transition: all 0.2s ease-in;
+}
+
+.new_deal_input_wrap input:focus ~ label, 
+.new_deal_input_wrap input:valid ~ label  {
+    bottom: 2.9rem;
+    font-size: 0.7rem;
+    opacity: 1;
+}
+
+#return_and_add_wrapper { /* Styling Return and Add Deal buttons */
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 1.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.final_buttons {
+    position: relative;
+    background-color: white;
+    width: 45%;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#return_button {
+    background-color: var(--return_color);
+}
+
+#return_button  a {
+    width: 100%;
+    height: 2.5rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#return_button img{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    right: 0.40rem;
+}
+
+#return_button:hover {
+    background-color: var(--return_hover_color);
+}
+
+#add_deal_button {
+    background-color: var(--add_category_color);
+    color: white;
+}
+
+#add_deal_button {
+    background-color: var(--add_category_color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+#add_deal_button:hover {
+    background-color: var(--add_category_hover_color);
+}
+
+/* Sidebar Styling (Right hand side) */
+
+#right_sidebar_container {
+    width: 12.5rem;
+    min-height: 3rem;
+    background-color: var(--right_sidebar_color);
+    position: absolute;
+    top: 10.5rem;
+    right: 0rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    transition: all 0.3s ease-out;
+    animation: come_in 0.3s ease-out 0s 1;
+}
+
+@keyframes come_in {
+    from {
+        right: -12.5rem;
+    }
+    to {
+        right: 0rem;
+    }
+}
+
+#right_sidebar_container img {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+}
+
+#right_sidebar_container img:hover {
+    opacity: 0.8;
+}
+
+#right_sidebar_head {
+    width: 100%;
+    min-height: 3rem;
+    border-top-left-radius: var(--border-radius);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d7a7a;
+    color: rgb(235, 235, 235);
+    cursor: default;
+}
+
+#right_side_options_wrapper {
+    width: 100%;
+    min-height: 3rem;
+}
+
+#right_side_options_wrapper a {
+    text-decoration: none;
+}
+
+.right_sidebar_options {
+    width: 100%;
+    min-height: 3rem;
+    background-color: white;
+    border-bottom-left-radius: calc(var(--border-radius) - 7.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9A9A9A;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.right_sidebar_options:hover {
+    background-color: #940606;
+    color: #e9dcdc;
+}

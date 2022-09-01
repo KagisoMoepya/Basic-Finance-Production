@@ -7,9 +7,8 @@
     <title>Product Line</title>
     <link rel="shortcut icon" href="Icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="Styles/default_page.css">
-    <link rel="stylesheet" href="Styles/product_line.css">
+    <link rel="stylesheet" href="Styles/deal_options.css">
     <script src="Scripts/default.js" defer></script>
-    <script src="Scripts/product_line.js" defer></script>
 </head>
 <body>
 
@@ -87,72 +86,62 @@
 
     <!-- Product Line Page Items -->
 
-    <h1 id="product_line_heading"><strong>Product Line</strong></h1>
-
-    <div id="product_line_container">
-        <div class="category">
-                <h5 class="stock_count">10</h5>
-                <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-                <h5 class="category_text">Winter Socks</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">20</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Scotch Pants</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">90</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Blankets</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">50</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Eggs</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">0</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Pepper</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">150</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Pumpkin</h5>
-        </div>
+    <div id="deal_options_heading">
+        <h1>Create New Deal</h1>
+        <h2><u>Winter Socks</u></h2>
     </div>
 
-    <!-- Side Bar right for Product Line -->
+    <form>
+        <div class="new_deal_input_wrap">
+            <input type="number" name="selling_price" id="selling_price" required>
+            <label for="selling_price">Selling Price</label>
+        </div>
+
+        <div class="new_deal_input_wrap">
+            <input type="number" name="deal_quantity" id="deal_quantity" required>
+            <label for="deal_quantity">Deal Quantity</label>
+        </div>
+
+        <div id="return_and_add_wrapper">
+            <div class="final_buttons" id="return_button">
+                <a href="./Product Line.html">
+                    <img src="Icons/Product Line Icons/Return.svg" alt="">
+                    <h5>Back</h5>
+                </a>
+            </div>
+
+            <div class="final_buttons" id="add_deal_button">
+                <h5>+ Add Deal</h5>
+            </div>
+        </div>
+    </form>
+
+    <!-- <div id="deal_options_container">
+
+        
+
+    </div> -->
+
+    <div id="product_line_container">
+        
+    </div>
+
+    <!-- Side Bar right for Deal Options-->
 
     <div id="right_sidebar_container">
 
         <img src="./Icons/Product Line Icons/close.svg" alt="">
 
         <div id="right_sidebar_head">
-            <h4></h4>
-            <h6></h6>
+            <h4>Winter Socks</h4>
+            <h6>50 Stock Items Remaining</h6>
         </div>
 
         <div id="right_side_options_wrapper">
-            <a href="./Deal Options.html"><div class="right_sidebar_options"><h4>Deal Options</h4></div></a>
-            <a href="#"> <div class="right_sidebar_options"><h4>Customer Orders</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Stock Control</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Sales & Expenses</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Product Details</h4></div></a>
+            <div class="right_sidebar_options"><h4>Create New Deal</h4></div>
+            <div class="right_sidebar_options"><h4>Existing Deals</h4></div>
         </div>
-
     </div>
-
-    <!-- Add Button -->
-
-    <a href="Add Category.html">
-        <div id="add_category_container">+</div>
-    </a>  
 
     <!-- Contact Items -->
 

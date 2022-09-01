@@ -10,13 +10,11 @@ let categoryName = document.getElementById("category_name")
 let categoryInput = document.getElementById("category_input")
 
 categoryInput.addEventListener("input", () => {
-
     if (categoryInput.value == "") {
         categoryName.innerHTML = "New Stock Item"
     } else {
         categoryName.innerHTML = categoryInput.value
     }
-
 })
 
 /**
@@ -29,7 +27,6 @@ let fileName = document.getElementById("file_name")
 let fileNameString = ""
 
 choosePicButton.addEventListener("change", () => {
-    
     const reader = new FileReader()
     reader.onload = function() {
         categoryOrTypeImg.setAttribute("src", reader.result)
@@ -40,7 +37,6 @@ choosePicButton.addEventListener("change", () => {
     reader.readAsDataURL(pictureData)
     fileName.innerHTML = pictureData.name
     fileNameString = pictureData.name
-    
 }, false)
 
 /**
@@ -50,11 +46,9 @@ choosePicButton.addEventListener("change", () => {
 let addCategoryButton = document.getElementById("add_category_button")
 
 addCategoryButton.addEventListener("click", () => {
-
     if (categoryInput.value.length > 0 && fileNameString != "") {
         categoryOrTypeImg.style.backgroundColor = "#7B4E4E"
     }
-
 })
 
 
