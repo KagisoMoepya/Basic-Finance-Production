@@ -69,3 +69,40 @@ rightSidebarOptions.forEach(option => {
         mainHeadingText.textContent = existingDealText
     })
 })
+
+/* 
+Existing deals container
+*/
+
+const deals_table = document.getElementsByClassName('existing-deals-table').item(0)
+const table_body = document.getElementsByTagName('tbody').item(0)
+const table_body_rows = table_body.getElementsByTagName('tr')
+const noDealsText = document.getElementById('no_existing_deals')
+
+const dealsExistCheck = function() {
+    if(table_body_rows.length === 0) {
+        deals_table.style.display = 'none'
+        noDealsText.style.display = 'flex'
+    } else {
+        deals_table.style.display = 'table'
+        noDealsText.style.display = 'none'
+    }
+}
+dealsExistCheck()
+
+for(let i = 0; i < table_body_rows.length; i++) {
+    
+    const row = table_body_rows.item(i)
+    const removeDealData = row.getElementsByTagName('td')
+    const removeDealButton = removeDealData.item(removeDealData.length - 1).getElementsByTagName('div').item(0)
+
+    removeDealButton.addEventListener('click', () => {
+        row.remove()
+        console.log(table_body_rows.length)
+
+        dealsExistCheck()
+    })
+}
+
+
+

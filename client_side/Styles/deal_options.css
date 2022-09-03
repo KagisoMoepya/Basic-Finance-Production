@@ -211,8 +211,8 @@ input[type=number] {
 /* Exsting Deals Container */
 
 #existing_deals_container {
-    width: 19rem;
-    min-height: 7.5rem;
+    width: 20rem;
+    min-height: 12.5rem;
     margin: auto;
     position: relative;
     top: 8rem;
@@ -227,52 +227,54 @@ input[type=number] {
     align-items: center;
 }
 
-#deals_wrapper {
-    width: 100%;
-    min-height: 2rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    transition: all 0.3s ease-out;
-}
-
-.existing_deal {
-    overflow-y: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 87.5%;
-    height: auto;
+.existing-deals-table {
+    display: table;
+    border-collapse: collapse;
+    width: 80%;
     margin: auto;
-    position: relative;
-    cursor: default;
-    margin-top: 1rem;
-    transition: all 0.3s ease-out;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-.remove_deal {
+.existing-deals-table thead {
+    display: none;
+}
+
+.existing-deals-table tbody tr{
+    transform: translateY(0.9rem);
+    height: 2.25rem;
+    opacity: 1;
+}
+
+.existing-deals-table tr th, 
+.existing-deals-table tr td {
+    padding: 5px;
+}
+
+.existing-deals-table tr td div {
+    transform: translateX(1.5rem);
+    background-color: red;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: rgb(227, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
     font-weight: bolder;
-    text-align: center;
     border-radius: 50%;
-    position: relative;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
 
-.remove_deal:hover {
-    background-color: #940606;
+.existing-deals-table tr td div:hover {
+    background-color: rgb(212, 10, 10);
 }
 
 #return_button_existing_deal {
-    margin: 0.75rem auto;
+    margin: 1.5rem auto;
     background-color: var(--return_color);
     position: relative;
-    bottom: 0.5rem;
+    top: 0.5rem;
     font-size: 0.9rem;
 }
 
@@ -294,6 +296,13 @@ input[type=number] {
 
 #return_button_existing_deal:hover {
     background-color: var(--return_hover_color);
+}
+
+#no_existing_deals {
+    display: none;
+    transform: translateY(4.25rem);
+    font-size: 1rem;
+    cursor: default;
 }
 
 /* Sidebar Styling (Right hand side) */
