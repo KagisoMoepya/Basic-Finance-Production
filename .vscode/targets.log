@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep  1 14:55:25 2022
+# Make data base, printed on Sun Sep  4 20:57:38 2022
 
 # Variables
 
@@ -61,7 +61,7 @@ VSCODE_CODE_CACHE_PATH = /home/kagiso/.config/Code/CachedData/6d9b74a70ca9c7733b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.WDZSR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.UWRWR1
 # default
 .LOADED := 
 # default
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3387
+VSCODE_PID = 3448
 # environment
 SDKMAN_DIR = /home/kagiso/.sdkman
 # environment
@@ -107,7 +107,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2266,unix/wtc:/tmp/.ICE-unix/2266
+SESSION_MANAGER = local/wtc:@/tmp/.ICE-unix/2029,unix/wtc:/tmp/.ICE-unix/2029
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +151,7 @@ LANGUAGE = en_ZA:en
 # environment
 SDKMAN_CANDIDATES_DIR = /home/kagiso/.sdkman/candidates
 # environment
-INVOCATION_ID = 5ce3775f3bd24c1896ad3d2f0c8cdaa6
+INVOCATION_ID = ed6ebc971eb840d8867de062ffd5621d
 # environment
 USERNAME = kagiso
 # environment
@@ -183,7 +183,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := kill
 # environment
-SYSTEMD_EXEC_PID = 2319
+SYSTEMD_EXEC_PID = 2089
 # environment
 DISPLAY = :0
 # environment
@@ -193,15 +193,15 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2112
+MANAGERPID = 1872
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3387
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3448
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:35112
+JOURNAL_STREAM = 8:32169
 # environment
 GOLANG_EXECUTABLE = go
 # environment
@@ -288,13 +288,13 @@ all:
 
 # No general ('VPATH' variable) search path.
 
+ 
 # strcache buffers: 1 (0) / strings = 20 / storage = 241 B / avg = 12 B
 # current buf: size = 8162 B / used = 241 B / count = 20 / avg = 12 B
 
 # strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
- 
 # Load=20/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Thu Sep  1 14:55:25 2022
+# Finished Make data base on Sun Sep  4 20:57:38 2022
 
  

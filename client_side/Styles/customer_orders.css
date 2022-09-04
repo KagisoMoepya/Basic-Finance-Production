@@ -1,0 +1,198 @@
+/* Customer Orders Styling */
+
+:root {
+    --div_background: #7B4E4E;
+    --add_category_color: #54C3CA;
+    --add_category_hover_color: #38aab0;
+    --return_hover_color: #AFAFAF;
+    --return_color: #E8D2D2;
+    --right_sidebar_color: #D9D9D9;
+    --bar_Color: #bcc1c5;
+    --width_height: 10rem;
+    --border-radius: 30px;
+}
+
+/* Heading Styles */
+#customer_orders_heading {
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+
+#customer_orders_heading h1 {
+    font-size: 2.5rem;
+}
+
+#customer_orders_heading h2 {
+    font-size: 1.75rem;
+}
+
+/* Form Styling */
+
+form {
+    width: 19rem;
+    min-height: 20rem;
+    margin: auto;
+    background-color: var(--div_background);
+    position: relative;
+    top: 8rem;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0.5px rgb(0, 0, 0, 0.25);
+    display: block;
+}
+
+form h3 {
+    text-align: center;
+    color: white;
+    transform: translateY(0.75rem);
+}
+
+.new_order_input_wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 1.5rem;
+}
+
+.new_order_input_wrap input{
+    width: 88.5%;
+    height: 2rem;
+    padding-left: 16px;
+    padding-right: 4px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--div_background);
+    border: 2px solid rgb(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+    transition: all 0.3s ease-in;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.new_order_input_wrap input:focus {
+    border: 2px solid rgb(0, 0, 0, 0.5);
+}
+
+.new_order_input_wrap label {
+    position: relative;
+    left: 1rem;
+    bottom: 1.70rem;
+    color: white;
+    cursor: text;
+    opacity: 0.9;
+    background-color: var(--div_background);
+    padding: 0 5px 0 5px;
+    font-size: 0.90rem;
+    transition: all 0.2s ease-in;
+}
+
+.new_order_input_wrap input:focus ~ label, 
+.new_order_input_wrap input:valid ~ label  {
+    bottom: 2.9rem;
+    font-size: 0.7rem;
+    opacity: 1;
+}
+
+.double_input_wrap {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(-0.55rem, -0.8rem);
+    margin-top: 0.80rem;
+}
+
+.quantity_wrap {
+    width: 7rem;
+    height: 2rem;
+}
+
+select {
+    width: 7rem;
+    height: 2.25rem;
+    border-radius: 25px;
+    text-align: center;
+    background-color: var(--div_background);
+    outline: none;
+    border: 2px solid rgb(0, 0, 0, 0.25);
+    color: white;
+}
+
+#return_and_add_wrapper { /* Styling Return and Add Deal buttons */
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    transform: translateX(-0.375rem);
+}
+
+.final_buttons {
+    position: relative;
+    background-color: white;
+    width: 45%;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#return_button {
+    background-color: var(--return_color);
+}
+
+#return_button  a {
+    width: 100%;
+    height: 2.5rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#return_button img{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    right: 0.40rem;
+}
+
+#return_button:hover {
+    background-color: var(--return_hover_color);
+}
+
+#add_deal_button {
+    background-color: var(--add_category_color);
+    color: white;
+}
+
+#add_deal_button {
+    background-color: var(--add_category_color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+#add_deal_button:hover {
+    background-color: var(--add_category_hover_color);
+}

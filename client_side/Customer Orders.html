@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Line</title>
+    <title>Customer Orders</title>
     <link rel="shortcut icon" href="Icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="Styles/default_page.css">
-    <link rel="stylesheet" href="Styles/product_line.css">
+    <link rel="stylesheet" href="Styles/customer_orders.css">
     <script src="Scripts/default.js" defer></script>
-    <script src="Scripts/product_line.js" defer></script>
+    <script src="./Scripts/customer_orders.js" defer></script>
 </head>
 <body>
 
@@ -87,72 +87,87 @@
 
     <!-- Product Line Page Items -->
 
-    <h1 id="product_line_heading"><strong>Product Line</strong></h1>
-
-    <div id="product_line_container">
-        <div class="category">
-                <h5 class="stock_count">10</h5>
-                <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-                <h5 class="category_text">Winter Socks</h5>
+    <!-- <div id="right_selectors_container">
+        <div class="right_side_selectors">
+            <img src="./Icons/Deal Options/rightSide_options.svg" alt="">
         </div>
+    </div> -->
 
-        <div class="category">
-            <h5 class="stock_count">20</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Scotch Pants</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">90</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Blankets</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">50</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Eggs</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">0</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Pepper</h5>
-        </div>
-
-        <div class="category">
-            <h5 class="stock_count">150</h5>
-            <img src="Icons/Product Line Icons/No Image.png" alt="" class="category_img">
-            <h5 class="category_text">Pumpkin</h5>
-        </div>
+    <div id="customer_orders_heading">
+        <h1>Create New Order</h1>
+        <h2><u>Winter Socks</u></h2>
     </div>
 
-    <!-- Side Bar right for Product Line -->
+    <form>
 
-    <div id="right_sidebar_container">
+        <h3>Custome Details</h3>
 
-        <img src="./Icons/Product Line Icons/close.svg" alt="">
+        <div class="new_order_input_wrap">
+            <input type="number" name="customer_name" id="customer_name" required>
+            <label for="customer_name">Name</label>
+        </div>
+
+        <div class="new_order_input_wrap">
+            <input type="number" name="customer_contact" id="customer_contact" required>
+            <label for="customer_contact">Contact</label>
+        </div>
+
+        <div class="new_order_input_wrap double_input_wrap">
+            <select name="select_deal" id="select_deal">
+                <option value="Select Deal">Select Deal</option>
+                <option value="1 for R60">1 for R60</option>
+                <option value="2 for R100">2 for R100</option>
+                <option value="3 for R120">3 for R120</option>
+            </select>
+
+            <div class="quantity_wrap">
+                <input type="number" name="quantity_input" id="quantity_input" required>
+                <label for="quantity_input">Quantity</label>
+            </div>
+        </div>
+
+        <div class="new_order_input_wrap double_input_wrap">
+            <select name="select_deal" id="select_deal">
+                <option value="Rate">Rate</option>
+                <option value="R">R</option>
+                <option value="%">%</option>
+            </select>
+
+            <div class="quantity_wrap">
+                <input type="number" name="order_discount" id="order_discount" required>
+                <label for="order_discount">Discount</label>
+            </div>
+        </div>
+
+        <div id="return_and_add_wrapper">
+            <div class="final_buttons" id="return_button">
+                <a href="./Product Line.html">
+                    <img src="Icons/Product Line Icons/Return.svg" alt="">
+                    <h5>Back</h5>
+                </a>
+            </div>
+
+            <div class="final_buttons" id="add_deal_button">
+                <h5>+ New Order</h5>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- Side Bar right for Deal Options-->
+
+    <!-- <div id="right_sidebar_container">
 
         <div id="right_sidebar_head">
-            <h4></h4>
-            <h6></h6>
+            <h4>Winter Socks</h4>
+            <h6>50 Stock Items Remaining</h6>
         </div>
 
         <div id="right_side_options_wrapper">
-            <a href="./Deal Options.html"><div class="right_sidebar_options"><h4>Deal Options</h4></div></a>
-            <a href="./Customer Orders.html"> <div class="right_sidebar_options"><h4>Customer Orders</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Stock Control</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Sales & Expenses</h4></div></a>
-            <a href="#"><div class="right_sidebar_options"><h4>Product Details</h4></div></a>
+            <div id="create_new_deal_selector" class="right_sidebar_options"><h4>Create New Deal</h4></div>
+            <div class="right_sidebar_options"><h4>Existing Deals</h4></div>
         </div>
-
-    </div>
-
-    <!-- Add Button -->
-
-    <a href="Add Category.html">
-        <div id="add_category_container">+</div>
-    </a>  
+    </div> -->
 
     <!-- Contact Items -->
 

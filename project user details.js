@@ -11,7 +11,6 @@ class User {
     }
 
     invetory_items(user_email_address) {
-
         let inventory_list = []
         const select = `SELECT * FROM user_inventory WHERE user_email_address = ?`
         const statement = db.prepare(select)
@@ -28,8 +27,6 @@ class User {
         }, 50)
 
     }
-
-    
 }
 
 let user1 = new User('kagisomoepya19@gmail.com', 'Emmaunuel19')
