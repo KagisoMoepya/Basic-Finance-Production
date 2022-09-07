@@ -1,6 +1,7 @@
 /* Customer Orders Styling */
 
 :root {
+    --primary: #b31414;
     --div_background: #7B4E4E;
     --add_category_color: #54C3CA;
     --add_category_hover_color: #38aab0;
@@ -11,6 +12,11 @@
     --width_height: 10rem;
     --border-radius: 30px;
 }
+
+body {
+    overflow-x: hidden;
+}
+
 
 /* Heading Styles */
 #customer_orders_heading {
@@ -130,6 +136,7 @@ select {
     outline: none;
     border: 2px solid rgb(0, 0, 0, 0.25);
     color: white;
+    cursor: pointer;
 }
 
 #return_and_add_wrapper { /* Styling Return and Add Deal buttons */
@@ -195,4 +202,273 @@ select {
 
 #add_deal_button:hover {
     background-color: var(--add_category_hover_color);
+}
+
+/* Model Styling */
+
+#model {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgb(0, 0, 0, 0.70);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0s;
+}
+
+#model h1 {
+    text-align: center;
+    transform: translateY(6rem);
+    font-size: 2.5rem;
+    color: white;
+    cursor: default;
+}
+
+.table { /* Table styling */
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 70%;
+    margin: auto;
+    font-size: 0.9rem;
+    transform: translateY(10rem);
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.table thead {
+    background-color: var(--primary);
+}
+
+.table th{
+    font-weight: 600;
+    padding: 15px;
+    color: white;
+
+}
+
+.table tbody tr {
+    background-color: rgb(96, 90, 90, 0.7);
+    color: rgba(255, 255, 255, 1);
+}
+
+.table td {
+    padding: 12.5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(113, 108, 108, 0.7);
+}
+
+.edit_remove_buttons {
+    width: 100%;
+    min-height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.buttons {
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, border-radius 0.8s ease-out;;
+}
+
+#remove_button {
+    background-color: var(--primary);
+}
+
+#edit_button {
+    background-color: rgb(9, 162, 218, 0.8);
+}
+
+#remove_button:hover {
+    background-color: #e91a1a;
+}
+
+#edit_button:hover {
+    background-color: #36c9ff;
+}
+
+.checkout_button {
+    background-color: #16b877;
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 12.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-out;
+}
+
+.checkout_button:hover {
+    background-color: #19df90;
+}
+
+@media (max-width: 760px) {
+
+    .table {
+        width: 70%;
+    }
+    
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        border-radius: 0;
+        display: block;
+    } 
+    
+    .table tr {
+        margin-bottom: 1rem;
+    }
+
+    .table td {
+        text-align: right;
+        vertical-align: middle;
+        padding-left: 50%;
+        border: 1px solid #cdcdcd;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        padding-right: 50%;
+        font-weight: bolder;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .buttons {
+        width: 47.5%;
+        border-radius: 0px;
+    }
+
+    .checkout_button {
+        border-radius: 0%;
+    }
+}
+
+/* Close Sidebar button */
+
+#right_selectors_container {
+    width: 2.5rem;
+    min-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right_side_selectors {
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.right_side_selectors:nth-child(even) img {
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(0deg);
+}
+
+.right_side_selectors:nth-child(even) {
+    position: relative;
+    /* right: -6.5rem; */
+}
+
+.right_side_selectors img {
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-out;
+}
+
+.right_side_selectors:hover {
+    background-color: var(--bar_Color);
+}
+
+/* Sidebar Styling (Right hand side) */
+
+#right_sidebar_container {
+    width: 12.5rem;
+    min-height: 3rem;
+    background-color: var(--right_sidebar_color);
+    position: absolute;
+    top: 10.5rem;
+    right: -12.5rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    transition: all 0.3s ease-out;
+}
+
+#right_sidebar_head {
+    width: 100%;
+    min-height: 3rem;
+    border-top-left-radius: var(--border-radius);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d7a7a;
+    color: rgb(235, 235, 235);
+    cursor: default;
+}
+
+#right_side_options_wrapper {
+    width: 100%;
+    min-height: 3rem;
+}
+
+#right_side_options_wrapper a {
+    text-decoration: none;
+}
+
+.right_sidebar_options {
+    width: 100%;
+    min-height: 3rem;
+    background-color: white;
+    border-bottom-left-radius: calc(var(--border-radius) - 7.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9A9A9A;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#create_new_deal_selector {
+    background-color: #940606;
+    color: white;
 }

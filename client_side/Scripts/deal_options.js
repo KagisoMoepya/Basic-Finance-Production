@@ -18,7 +18,7 @@ const rightSelectorsClasses = rightSelectorsContainer.querySelectorAll('.right_s
 rightSelectorsClasses.addEventListener('click', () => {
     let img = rightSelectorsContainer.getElementsByTagName('img').item(0)
     let source = img.getAttribute('src')
-    let optionsPic = './Icons/Deal Options/rightSide_options.svg'
+    let optionsPic = './Icons/Product Line Icons/Deal Options/rightSide_options.svg'
     let closePic = './Icons/Product Line Icons/close.svg'
 
     if(source === optionsPic) {

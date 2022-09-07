@@ -85,13 +85,19 @@
         </div>
     </div>
 
-    <!-- Product Line Page Items -->
-
-    <!-- <div id="right_selectors_container">
+    <!-- Sidebar (Right hand side)  -->
+    
+    <div id="right_selectors_container">
         <div class="right_side_selectors">
-            <img src="./Icons/Deal Options/rightSide_options.svg" alt="">
+            <img src="./Icons/Product Line Icons/Deal Options/rightSide_options.svg" alt="">
         </div>
-    </div> -->
+
+        <div class="right_side_selectors">
+            <img src="./Icons/Product Line Icons/Customer Orders/checkout_orders.svg" alt="">
+        </div>
+    </div>
+
+    <!-- Product Line Page Items -->
 
     <div id="customer_orders_heading">
         <h1>Create New Order</h1>
@@ -100,7 +106,7 @@
 
     <form>
 
-        <h3>Custome Details</h3>
+        <h3>Customer Details</h3>
 
         <div class="new_order_input_wrap">
             <input type="number" name="customer_name" id="customer_name" required>
@@ -122,13 +128,13 @@
 
             <div class="quantity_wrap">
                 <input type="number" name="quantity_input" id="quantity_input" required>
-                <label for="quantity_input">Quantity</label>
+                <label for="quantity_input">No. of Orders</label>
             </div>
         </div>
 
         <div class="new_order_input_wrap double_input_wrap">
             <select name="select_deal" id="select_deal">
-                <option value="Rate">Rate</option>
+                <option value="Rate">Discount Rate</option>
                 <option value="R">R</option>
                 <option value="%">%</option>
             </select>
@@ -153,10 +159,9 @@
         </div>
     </form>
 
-
     <!-- Side Bar right for Deal Options-->
 
-    <!-- <div id="right_sidebar_container">
+    <div id="right_sidebar_container">
 
         <div id="right_sidebar_head">
             <h4>Winter Socks</h4>
@@ -164,15 +169,97 @@
         </div>
 
         <div id="right_side_options_wrapper">
-            <div id="create_new_deal_selector" class="right_sidebar_options"><h4>Create New Deal</h4></div>
-            <div class="right_sidebar_options"><h4>Existing Deals</h4></div>
+            <div id="create_new_deal_selector" class="right_sidebar_options"><h4>Create New Orders</h4></div>
+            <div class="right_sidebar_options"><h4>Pending Orders</h4></div>
+            <div class="right_sidebar_options"><h4>Past Orders</h4></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Contact Items -->
 
     <div id="contact_button">
         <img id="contact_pic" src="Icons/Default Icons/Contact Icon.svg" alt="">
+    </div>
+
+    <!-- Page Model -->
+
+    <div id="model">
+
+        <h1>Confirm Orders</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Deal Selected</th>
+                    <th>No. Orders</th>
+                    <th>Discount Rate</th>
+                    <th>Discount</th>
+                    <th>Edit / Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Name">Kagiso Moepya</td>
+                    <td data-label="Contact">0658521154</td>
+                    <td data-label="Deal Selected">R60 for 2</td>
+                    <td data-label="No. Orders">2</td>
+                    <td data-label="Discount Rate">R</td>
+                    <td data-label="Discount">0</td>
+                    <td data-label="">
+                        <div class="edit_remove_buttons">
+                            <div id="edit_button" class="buttons">Edit</div>
+                            <div id="remove_button" class="buttons">Delete</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Kagiso Moepya</td>
+                    <td data-label="Contact">0658521154</td>
+                    <td data-label="Deal Selected">R60 for 2</td>
+                    <td data-label="No. Orders">2</td>
+                    <td data-label="Discount Rate">R</td>
+                    <td data-label="Discount">0</td>
+                    <td data-label="">
+                        <div class="edit_remove_buttons">
+                            <div id="edit_button" class="buttons">Edit</div>
+                            <div id="remove_button" class="buttons">Delete</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Kagiso Moepya</td>
+                    <td data-label="Contact">0658521154</td>
+                    <td data-label="Deal Selected">R60 for 2</td>
+                    <td data-label="No. Orders">2</td>
+                    <td data-label="Discount Rate">R</td>
+                    <td data-label="Discount">0</td>
+                    <td data-label="">
+                        <div class="edit_remove_buttons">
+                            <div id="edit_button" class="buttons">Edit</div>
+                            <div id="remove_button" class="buttons">Delete</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Kagiso Moepya</td>
+                    <td data-label="Contact">0658521154</td>
+                    <td data-label="Deal Selected">R60 for 2</td>
+                    <td data-label="No. Orders">2</td>
+                    <td data-label="Discount Rate">R</td>
+                    <td data-label="Discount">0</td>
+                    <td data-label="">
+                        <div class="edit_remove_buttons">
+                            <div id="edit_button" class="buttons">Edit</div>
+                            <div id="remove_button" class="buttons">Delete</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="checkout_button">Confirm Orders</div>
     </div>
 </body>
 </html>
